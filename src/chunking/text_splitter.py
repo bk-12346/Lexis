@@ -33,7 +33,7 @@ def chunk_documents(
 
     # Add chunk index to metadata - IMP for production
     for i, chunk in enumerate(chunks):
-        chunk.metadata["chunk_index"] = i,
+        chunk.metadata["chunk_index"] = int(i)
         chunk.metadata["chunk_size"] = len(chunk.page_content)
     
     return chunks
