@@ -2,6 +2,8 @@
 
 A production-grade AI document intelligence platform built for enterprise and government use cases. Lexis combines a full RAG pipeline, a conversational research agent, and a policy document assistant. Each built from scratch with real deployment constraints in mind.
 
+![Policy Document Assistant](assets/policy_assistant_demo.png)
+
 ---
 
 ## Architecture
@@ -74,6 +76,7 @@ python app.py
 
 ---
 
+![LangSmith Trace](assets/langsmith_trace.png)
 ### 2. ReAct Research Agent (`src/agent/` + `agent_app.py`)
 
 A LangGraph-powered agent that dynamically selects tools based on the user's question rather than following a fixed pipeline. Equipped with three tools:
